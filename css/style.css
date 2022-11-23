@@ -1,0 +1,126 @@
+body{
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-display:inherit;
+    text-align: justify;
+    color: white;
+}
+a{
+    color:lightgreen;
+    text-decoration: none;
+}
+.doboz{
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    padding: 10px;
+    margin: 15px;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+}
+img{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+table{
+    align-self: center;
+    margin: auto;
+}
+.horgonyok{
+    margin: 1px auto;
+    width: 200px;
+    font-size: larger;
+}
+.ugras{
+    display: grid;
+    margin: auto;
+    width: 700px;
+    font-size: larger;
+}
+.jobb{
+    float: right;
+}
+.bal{
+    float: left;
+}
+.profil{
+    border-radius: 50%;
+}
+.masik{
+    margin: 0 auto;
+    width: 250px;
+    background-color: blue;
+    border: 2px solid white;
+    border-radius: 25%;
+    text-align: center;
+    font-size: large;
+}
+ul#menu{
+    list-style: none;
+    width: 200px;
+    margin: 0 auto;
+    padding: 0;
+}
+ul#menu li{
+    margin: 8px 0;
+    position: relative;
+    background-color: black;
+    border-radius: 2px;
+    overflow: hidden;
+}
+ul#menu li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;   
+    transition: 0.5s all ease-in-out;
+}
+
+ul#menu li:nth-child(1):before{
+    background-color: red;
+}
+ul#menu li:nth-child(2):before{
+    background-color: purple;
+}
+ul#menu li:nth-child(3):before{
+    background-color: teal;
+}
+ul#menu li:nth-child(4):before{
+    background-color: brown;
+}
+
+
+
+ul#menu li:hover::before{
+    border-radius: 0 50px 50px 0;
+    width: 120%;
+}
+
+
+ul#menu li a{
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width:800px) {
+    /* For mobile phones: */
+    .doboz{
+        grid-template-columns:  1fr;
+    }    
+    .horgonyok, .ugras {
+        width: 100%;
+    }
+  }
+

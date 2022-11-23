@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagi Miklós László</title>    
+    <link rel="icon" type="image/x-icon" href="img/konzol.png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Fel</button>
+    <div class="doboz"> 
+        <div>
+            <img src="img/game.jpg" alt="en" class="profil">
+        </div>
+        <div>
+            <h2>Hobbik</h2>
+            <p>
+                Sok hobbim nincs, sajnos szabadidőm is alig-alig. Szabadidőmben kockulok vagy a párommal foglalkozom, mint randi. <br>
+                Mint hobbi, akkor mondhatom azt, hogy főzőm, amit a párom nagyon szeret, mert nem neki kell csinálni, valamint nem is csinálom rosszul. <br>
+                Régebbi szórakozásom egyike volt a sportszerű úszás. Ezt sajnos az évek során átváltott csak hobbi szintre, majd csak alkalmi szórakozásra. <br>
+                Szeretek parakordozni, avagy makramézni. <a href="https://www.tacticalstore.hu/Termekek/Paracord?gclid=CjwKCAjwkaSaBhA4EiwALBgQaAIFL0TTbc93aTpz0clXv_pV5-gETHp2CunLuy8-a5z7HQZmHrH4pRoChe4QAvD_BwE" target="_blank">Innen szerzem</a>, és <a href="https://hu.pinterest.com/bagimilasz/paracord/" target="_blank">ilyenek szoktam gyártani.</a>
+            </p>
+        </div>
+    </div>
+    <div class="masik">
+        <a href="index.html">Vissza a Főoldalra</a>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>

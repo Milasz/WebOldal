@@ -1,0 +1,81 @@
+body{
+    margin: 20px;
+    text-align: center;
+}
+
+.wrapper{
+    text-align: center;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "egy ketto ketto harom"
+    "ot ot nyolcban nyolcban"
+    "tizenharom tizenharom tizenharom tizenharom";
+    background-color: black;
+    color: white;
+}
+.box {    
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+  }
+.egyes{
+    grid-area: egyes;
+}
+.ketto{
+    grid-area: ketto;
+}
+.harom{
+    grid-area: harom;
+}
+.negy{
+    grid-area: negy;
+}
+.ot{
+    grid-area: ot;
+}
+.hat{
+    grid-area: hat;
+}
+.het{
+    grid-area: het;
+}
+.nyolcban{
+    grid-area: nyolcban;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "kilenc tiz"
+    "tizenegy tizenketto" ;    
+    color: white;
+}
+.kilenc{
+    grid-area: kilenc;
+    background-color: red;
+}
+.tiz{
+    grid-area: tiz;
+    background-color: red;
+}
+.tizenegy{
+    grid-area: tizenegy;
+    background-color: red;
+}
+.tizenketto{
+    grid-area: tizenketto;
+    background-color: red;
+}
+.tizenharom{
+    grid-area: tizenharom;
+}
+
+
+
